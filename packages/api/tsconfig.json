@@ -3,5 +3,5 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["src", "./test/**/*.ts", "../dataHydration/transformers", "../dataHydration/infra/utilities/transformers"]
+  "include": ["src", "./test/**/*.ts"]
 }

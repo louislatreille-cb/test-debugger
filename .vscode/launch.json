@@ -29,8 +29,7 @@
       "args": ["--config", "vitest-debug.config.mts", "run", "${relativeFile}"],
       "smartStep": true,
       "console": "integratedTerminal",
-      "internalConsoleOptions": "openOnFirstSessionStart",
-      "trace": true
+      "internalConsoleOptions": "openOnFirstSessionStart"
     },
     {
       "type": "node",
