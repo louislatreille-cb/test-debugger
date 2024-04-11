@@ -54,7 +54,7 @@ When debugging tests from a top-level package with vitest, the code withing the 
 
 ## Changing code in common
 
-1. Comment line 3 in file `packages/common/src/persistence`
+1. Comment line 3 in file `packages/common/src/persistence/index.ts`
 2. Rebuild the repo with `pnpm u`
 3. Go to the API test file: `./packages/api/test/test.test.ts`
 4. Set a breakpoint on line 6
