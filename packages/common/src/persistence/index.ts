@@ -1,6 +1,6 @@
 import { sleep } from "../utils/sleep";
 
-//export * from "./config";
+export * from "./config";
 export const commonFunction = async () => {
   const field = "someField";
 
