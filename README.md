@@ -1,3 +1,26 @@
+# Environment
+
+Node:
+
+```
+Node 20
+pnpm 8.15.2
+```
+
+VSCode:
+
+```
+Version: 1.88.0 (user setup)
+Commit: 5c3e652f63e798a5ac2f31ffd0d863669328dc4c
+Date: 2024-04-03T13:26:18.741Z
+Electron: 28.2.8
+ElectronBuildId: 27744544
+Chromium: 120.0.6099.291
+Node.js: 18.18.2
+V8: 12.0.267.19-electron.0
+OS: Windows_NT x64 10.0.22631
+```
+
 # Bug description
 
 When debugging tests from a top-level package with vitest, the code withing the common package (workspace dependency) is not mapped properly. Breakpoints and debugging pointers are not shown on the right files and lines of the TypeScript files.
