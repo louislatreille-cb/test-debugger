@@ -16,16 +16,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "vitest --run",
-    "test:unit": "vitest --run",
-    "migration:create": "pnpm typeorm-ts-node-esm migration:create src/persistence/migrations/LCA",
-    "migration:generate": "pnpm typeorm-ts-node-esm migration:generate src/persistence/migrations/LCA -d src/utils/migrationDatabaseConfig.ts",
-    "migration:run": "pnpm typeorm-ts-node-esm migration:run -d src/utils/migrationDatabaseConfig.ts",
-    "migration:revert": "pnpm typeorm-ts-node-esm migration:revert -d src/utils/migrationDatabaseConfig.ts",
-    "eslint": "npx eslint src",
-    "eslint:report": "npx eslint -f rdjson src | reviewdog -f=rdjson -reporter=github-pr-check -fail-on-error=true -name='common eslint report' -filter-mode nofilter",
-    "tsc": "npx tsc --noEmit",
-    "tsc:report": "npx tsc --noEmit | reviewdog -f=tsc -reporter=github-pr-check -fail-on-error=true -name='common tsc report' -filter-mode nofilter"
+    "test": "vitest --run"
   },
   "files": [
     "dist"
@@ -35,7 +26,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "20.12.7",
-    "@swc/core": "^1.3.21",
     "ts-node": "^10.9.1",
     "tsup": "^8.0.2",
     "typescript": "5.4.3",
